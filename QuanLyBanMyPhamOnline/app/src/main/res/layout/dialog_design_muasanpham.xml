@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear_thongbao"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:src="@drawable/tick_box" />
+
+        <TextView
+            android:layout_weight="8"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:textColor="#8BC34A"
+            android:textStyle="italic"
+            android:textSize="14sp"
+            android:text="Sản phẩm đã được thêm vào giỏ hàng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_linear"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear_thongbao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_weight="6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/dialog_hinh"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/dialog_tieude"
+                android:text="Tieu de san pham"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/dialog_gia"
+                android:textColor="#F00"
+                android:layout_marginTop="10dp"
+                android:text="gia san pham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dialog_xemgiohanghi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/dialog_linear"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#F00"
+        android:padding="10dp"
+        android:text="Xem Giỏ Hàng"
+        android:textColor="#FFFFFF" />
+
+
+</RelativeLayout>

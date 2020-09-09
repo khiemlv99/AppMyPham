@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+    <LinearLayout
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/backround">
+
+
+
+        <EditText
+            android:layout_margin="20dp"
+            android:id="@+id/search_view"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:hint="Search"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="2dp"
+            android:singleLine="true"
+            android:focusable="false"
+            />
+        <include layout="@layout/layout_title"
+            android:id="@+id/layouttitle"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/btnGioHang"
+            app:actionLayout="@layout/action_bar_notification_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/cart32" />
+
+        <com.nex3z.notificationbadge.NotificationBadge
+            android:id="@+id/badge_cart_Main"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/btnGioHang"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginTop="-10dp"
+            android:layout_toRightOf="@+id/btnGioHang"
+            app:nbMaxTextLength="2" />
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/nav_main"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        app:itemTextColor="#000000"
+        android:background="#4BCEDF"
+        app:menu="@menu/bottom_nav_item"/>
+
+    <FrameLayout
+        android:id="@+id/nav_host_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/nav_main"
+        android:layout_below="@+id/search_container"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp" />
+
+
+</RelativeLayout>

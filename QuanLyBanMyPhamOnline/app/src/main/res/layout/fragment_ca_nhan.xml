@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.CaNhanFragment">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/buttonDangNhapDangKy"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#FFFFFF"
+            android:drawableStart="@drawable/custom64"
+            android:drawableEnd="@drawable/continuenum1"
+            android:gravity="start|center"
+            android:padding="10dp"
+            android:text="Chào mừng bạn!\nĐăng nhập/ Đăng ký"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonDonHang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonDangNhapDangKy"
+            android:layout_marginTop="13dp"
+            android:background="#FFFFFF"
+            android:drawableStart="@drawable/bill32"
+            android:drawableEnd="@drawable/continuenum1"
+            android:gravity="center|left"
+            android:padding="10dp"
+            android:text="    Quản lý đơn hàng"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonSanPhamDaMua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonDonHang"
+            android:background="#FFFFFF"
+            android:drawableStart="@drawable/cart32"
+            android:drawableEnd="@drawable/continuenum1"
+            android:gravity="center|left"
+            android:padding="10dp"
+            android:text="    Sản phẩm đã mua"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonSanPhamDaXem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonSanPhamDaMua"
+            android:background="#FFFFFF"
+            android:drawableStart="@drawable/eye32"
+            android:drawableEnd="@drawable/continuenum1"
+            android:gravity="center|left"
+            android:padding="10dp"
+            android:text="    Sản phẩm đã xem"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnThongTinTT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonSanPhamDaXem"
+            android:background="#FFFFFF"
+            android:drawableStart="@drawable/cart32"
+            android:drawableEnd="@drawable/continuenum1"
+            android:gravity="center|left"
+            android:padding="10dp"
+            android:text="    Thông tin thanh toán"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDangXuat"
+            android:layout_below="@+id/btnThongTinTT"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@android:color/holo_blue_light"
+            android:text="Đăng xuất"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            />
+    </RelativeLayout>
+</FrameLayout>

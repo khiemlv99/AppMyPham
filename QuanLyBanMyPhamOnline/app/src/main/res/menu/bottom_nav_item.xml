@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_trangchu"
+        android:icon="@drawable/home"
+        android:title="Trang chủ"/>
+
+    <item android:id="@+id/navigation_Danhmuc"
+        android:icon="@drawable/dashboard"
+        android:title="Danh mục"/>
+
+    <item android:id="@+id/navigation_TimKiem"
+        android:icon="@drawable/search"
+        android:title="Tìm kiếm"/>
+
+    <item android:id="@+id/navigation_ThongBao"
+        android:icon="@drawable/notification"
+        android:title="Thông báo"/>
+
+    <item android:id="@+id/navigation_CaNhan"
+        android:icon="@drawable/account"
+        android:title="Cá nhân"/>
+
+</menu>

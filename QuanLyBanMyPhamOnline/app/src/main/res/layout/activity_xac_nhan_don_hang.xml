@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="6"
+            android:text="Ten nguoi nhan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txttenxacnhan"
+            android:hint="Tên người nhận"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:layout_weight="4"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/txtsdtxacnhan"
+            android:hint="Số điện thoại"
+            android:textColor="@android:color/black"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtdiachixacnhan"
+            android:textSize="20dp"
+            android:hint="Địa chỉ"
+            android:layout_below="@+id/txtsdtxacnhan"
+            android:textColor="@android:color/black"
+            />
+        <TextView
+            android:layout_weight="7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtThayDoi"
+            android:textSize="18sp"
+            android:text="Thay đổi"
+
+            android:textColor="@android:color/holo_blue_light"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtsdtxacnhan"
+        >
+
+        <Button
+            android:id="@+id/button_XacNhanHoaDon"
+            android:layout_weight="5"
+            android:layout_margin="10dp"
+            android:layout_marginRight="5dp"
+            android:text="Xác nhận"
+            android:background="#09D0EA"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/buttonHuyBoHoaDon"
+            android:layout_margin="10dp"
+            android:text="Hủy bỏ"
+            android:layout_marginLeft="5dp"
+            android:background="#09D0EA"
+            android:textColor="#ffffff"
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.XacNhanDonHangActivity" />
+</LinearLayout>
+
+

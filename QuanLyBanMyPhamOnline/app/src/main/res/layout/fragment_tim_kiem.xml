@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.TimKiemFragment"
+
+    >
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/search_viewtimkiem"
+        android:background="@android:color/white"
+        ></SearchView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/containerTimKiem"
+        android:layout_below="@+id/search_viewtimkiem">
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/card"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"> <TextView
+                android:paddingLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suggestion key"
+                android:textSize="16sp"/>
+                <me.gujun.android.taggroup.TagGroup
+                    android:padding="8dp"
+                    android:id="@+id/tag_group"
+                    app:atg_borderColor="@color/colorPrimary"
+                    app:atg_textColor="@color/colorPrimary"
+                    style="@style/TagGroup" /> </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card">
+
+            <RelativeLayout
+                android:id="@+id/relativeLichsuTimKiem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textLichsu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lịch sử tìm kiếm"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/btnXoaLichSu"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignLeft="@+id/textLichsu"
+                    android:layout_marginLeft="300dp"
+                    android:background="@android:color/white"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/delete36" />
+            </RelativeLayout>
+
+            <ListView
+
+                android:padding="10dp"
+                android:layout_below="@+id/relativeLichsuTimKiem"
+                android:id="@+id/ListViewLichSuTimKiem"
+                android:layout_width="409dp"
+                android:layout_height="625dp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="1dp" >
+
+
+            </ListView>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container_lstviewTimKiem"
+        android:layout_below="@+id/search_viewtimkiem"
+        android:visibility="gone">
+        <ListView
+            android:padding="10dp"
+            android:id="@+id/ListViewTimKiem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp"
+
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

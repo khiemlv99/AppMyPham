@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.DetailActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:src="@drawable/backround"
+                android:scaleType="fitXY"
+                android:id="@+id/imageviewctsp"
+                android:layout_margin="10dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/namsao"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:id="@+id/txtTenCTSP"
+                    android:layout_margin="10dp"
+                    android:textColor="#100F0F"
+                    android:text="Tên sản phẩm"
+                    />
+
+                <TextView
+                    android:id="@+id/txtGiaCTSP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Giá sản phẩm"
+                    android:textColor="#f00000"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="left"
+                    android:layout_margin="3dp"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/spiner"
+                    android:gravity="center"
+                    android:padding="15dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textStyle="bold|italic"
+                    android:drawableRight="@drawable/cart32"
+                    android:background="@drawable/backround"
+                    android:text="Thêm giỏ hàng"
+                    android:textSize="18sp"
+                    android:id="@+id/btnThemGH"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mô tả sản phẩm"
+                    android:layout_margin="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#100F0F"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Tôi có một TextViewđiều mà tôi muốn giới hạn các nhân vật của nó. Trên thực tế, tôi có thể làm điều này nhưng điều mà tôi đang tìm kiếm là làm thế nào để thêm ba dấu chấm (...) vào cuối chuỗi. Điều này cho thấy văn bản đã tiếp tục. Đây là XML của tôi nhưng không có dấu chấm mặc dù nó giới hạn văn bản của tôi."
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:id="@+id/txtMoTaCTSP"
+                    />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recyclerViewDetail"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

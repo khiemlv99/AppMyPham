@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:layout_height="match_parent"
+    tools:context=".activity.GioHangActivity">
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbarGioHang"-->
+<!--        app:title="Giỏ hàng"-->
+<!--        app:titleTextColor="#FFFFFF"-->
+<!--        android:background="#4ADCEF"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+    <LinearLayout
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+<!--            <TextView-->
+<!--                android:id="@+id/textViewThongBao"-->
+<!--                android:text="Giỏ hàng của bạn đang trống"-->
+<!--                android:textSize="30sp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"/>-->
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_noItem"
+                android:layout_width="250dp"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true"
+                android:layout_gravity="center"
+                app:lottie_fileName="4496-empty-cart.json"
+                android:layout_height="250dp"/>
+
+<!--            <ListView-->
+<!--                android:id="@+id/listViewGioHang"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"/>-->
+
+            <com.baoyz.swipemenulistview.SwipeMenuListView
+                android:id="@+id/listViewGioHang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:id="@+id/linearTien"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="Thành tiền"
+                android:layout_weight="8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_weight="2"
+                android:textColor="#f00"
+                android:text="0000000"
+                android:textSize="16sp"
+                android:gravity="end"
+                android:id="@+id/textViewTongTien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:id="@+id/buttonTienHanhDatHang"
+            android:text="Tiến hành đặt hàng"
+            android:textColor="#FFFFFF"
+            android:layout_margin="10dp"
+            android:background="#F30722"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

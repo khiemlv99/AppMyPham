@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTenNguoiNhan"
+        android:hint="Tên người nhận"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDiaChiNhanHang"
+        android:textSize="20dp"
+        android:hint="Địa chỉ"
+        android:layout_below="@+id/txtTenNguoiNhan"
+        android:textColor="@android:color/black"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/txtSDT"
+        android:layout_below="@id/txtDiaChiNhanHang"
+        android:hint="Số điện thoại"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/txtDiaChiMacDinh"
+        android:layout_below="@id/txtSDT"
+        android:textColor="@android:color/holo_red_dark"
+
+        />
+</RelativeLayout>

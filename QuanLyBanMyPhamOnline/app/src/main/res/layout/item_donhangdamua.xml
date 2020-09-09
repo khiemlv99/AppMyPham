@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txthotenmuahang"
+        android:hint="Tên sản phẩm"
+        android:textSize="18dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtthoigianmua"
+        android:hint="thời gian"
+        android:textSize="18dp"
+        android:layout_below="@id/txthotenmuahang"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtsoluongmuahang"
+        android:hint="số lượng"
+        android:textSize="18dp"
+        android:layout_below="@id/txtthoigianmua"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtgiasanpham"
+        android:hint="Giá sản phẩm"
+        android:textSize="18dp"
+        android:layout_below="@id/txtsoluongmuahang"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/txtgiasanpham"
+        android:id="@+id/imageViewDonHang"
+        ></ImageView>
+</RelativeLayout>
